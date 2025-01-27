@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        min-height: 80vh;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 10vh;
+        background-color: #220C10;
+    }
+
+    .content {
+        padding: 20px;
+        max-width: 100%;
+        margin: 32px;
+
+        table {
+            padding: 0px;
+            margin: 0px;
+            border-collapse: collapse;
+
+            thead {
+                background-color: black;
+                color: #fff;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .footer {
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        background-color: #75B8C8;
+    }
+
+    .aside-menu {
+        min-height: 100vh;
+        width: 8rem;
+        background-color: #506C64;
+
+        color: #fff;
+
+        ul {
+            padding: 0px
+        }
+
+        li {
+            padding: 8px;
+            list-style: none;
+            font-weight: bold;
+        }
+    }
+</style>
+
+<body>
+    <aside class="aside-menu">
+        <p>logo</p>
+        <ul>
+            <li>
+                <a href="./pages/home.html">Home</a>
+            </li>
+            <li>
+                Sobre a Clínica
+            </li>
+            <li>
+                Horário de atendimento
+            </li>
+        </ul>
+    </aside>
+    <div class="container">
+        <header class="header">
+            Header
+        </header>
+        <div class="content">
+            <div id="home">
+                <h1>Home page</h1>
+                <p>
+                    <strong>A história da clínica começa em </strong>... Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    <br />
+                    Aut rerum ducimus fugit qui vel, dicta iure reprehenderit perspiciatis quis voluptates amet
+                    blanditiis nobis obcaecati repudiandae adipisci quas eius velit itaque.
+                    <br />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempore accusantium sit, voluptatum
+                    repudiandae libero odit qui laboriosam corporis quis eaque reiciendis, eum unde laudantium at!
+                    <br />
+                    Iure ducimus similique modi nesciunt. Atque suscipit sequi dicta excepturi. Quam ullam perspiciatis,
+                    error dolor fuga accusamus exercitationem autem inventore nemo ipsum, placeat iste!
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div id="sobre">
+                <h1>Sobre a clinica</h1>
+                <p>
+                    <strong>A clina se baseia em</strong>... Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    <br />
+                    Aut rerum ducimus fugit qui vel, dicta iure reprehenderit perspiciatis quis voluptates amet
+                    blanditiis nobis obcaecati repudiandae adipisci quas eius velit itaque.
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div id="horarios">
+                <h1>Horário de atendimento</h1>
+                <table cellpadding="6">
+                    <thead>
+                        <th>Serviços</th>
+                        <th>Segunda a sexta</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        Footer
+    </footer>
+
+</body>
+
+</html>
